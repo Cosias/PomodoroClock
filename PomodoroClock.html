@@ -1,0 +1,47 @@
+<!Doctype html>
+
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Audiowide" rel="stylesheet">
+    <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="PomodoroClock.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src = 'PomodoroClock.js' defer></script>
+  </head>
+
+  <body>
+    
+    <h1 class ='text-center' id='title'>Pomodoro Clock</h1>
+    <div class = 'container text-center'>
+      
+      <div id = 'clockSession'>
+        <h2>Session Time</h2>
+        <a class = 'btn btn-primary' id ='sessionSub'>-</a>
+        <h3 id ='sessionTime'>25</h3>
+        <a class = 'btn btn-primary' id ='sessionAdd'>+</a>
+      </div>
+      
+      <div id ='clockBreak'>
+        <h2>Break Time</h2>
+        <a class = 'btn btn-primary' id ='breakSub'>-</a>
+        <h3 id = 'breakTime'>5</h3>
+        <a class = 'btn btn-primary' id ='breakAdd'>+</a>
+      </div>
+
+      <div>
+        <a class = 'btn btn-lg btn-danger' id = 'reset'>Reset</a>
+      </div>
+
+    </div>
+    
+    <div class = 'clock text-center container'>
+      <h1 id = 'startBtn'>Start</h1>
+      <h1 id ='session'>Session Time:</h1>
+      <h1 id ='break'>Break Time:</h1>
+      <h1 id = 'currentTime'></h1>
+    </div>
+  
+  </body>
+
+</html>
